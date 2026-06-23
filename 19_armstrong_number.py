@@ -1,0 +1,14 @@
+# Check Armstrong Number
+num = 153
+sum = 0
+temp = num
+
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+
+if num == sum:
+    print(f"{num} is an Armstrong number")
+else:
+    print(f"{num} is not an Armstrong number")
